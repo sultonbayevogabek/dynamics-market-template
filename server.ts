@@ -9,7 +9,6 @@ import { APP_BASE_HREF } from '@angular/common';
 import { existsSync } from 'fs';
 import { Express } from 'express';
 
-// The Express app is exported so that it can be used by serverless Functions.
 export function app(): Express {
     const server = express();
     const distFolder = join(process.cwd(), 'dist/stroyka/browser');
